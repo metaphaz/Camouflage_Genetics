@@ -507,3 +507,34 @@ events:
       
       
 ...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/snap/clion/284/bin/cmake/linux/x64/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/snap/clion/284/bin/cmake/linux/x64/share/cmake-3.28/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "/snap/clion/284/bin/cmake/linux/x64/share/cmake-3.28/Modules/FindThreads.cmake:97 (CHECK_C_SOURCE_COMPILES)"
+      - "/snap/clion/284/bin/cmake/linux/x64/share/cmake-3.28/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "libs/random/test/CMakeLists.txt:3 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "/home/metaphaz/camo_genetics/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-kFKy19"
+      binary: "/home/metaphaz/camo_genetics/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-kFKy19"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: '/home/metaphaz/camo_genetics/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-kFKy19'
+        
+        Run Build Command(s): /snap/clion/284/bin/ninja/linux/x64/ninja -v cmTC_6190e
+        [1/2] /usr/lib/ccache/cc -DCMAKE_HAVE_LIBC_PTHREAD  -fdiagnostics-color=always -o CMakeFiles/cmTC_6190e.dir/src.c.o -c /home/metaphaz/camo_genetics/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-kFKy19/src.c
+        [2/2] : && /usr/lib/ccache/cc   CMakeFiles/cmTC_6190e.dir/src.c.o -o cmTC_6190e   && :
+        
+      exitCode: 0
+...
