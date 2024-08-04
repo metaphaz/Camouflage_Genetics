@@ -1,4 +1,5 @@
 #include <iostream>
+#include <random>
 #include <vector>
 #include "libs/camo_member.h"
 
@@ -20,5 +21,16 @@ int main() {
     for (int i =0;i<5;++i) {
         members.erase(members.end()-i);
     }
+    std::random_device rd;
+    std::mt19937 mt(rd());
+    std::uniform_real_distribution<> random_module(0, 64);
+
+    for(int i = 0;i<members.size();++i)
+    {
+        int a = static_cast<int>(random_module(mt));
+        std::cout << a << std::endl;
+
+    }
+
     std::cout <<"br2";
 }

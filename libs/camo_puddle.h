@@ -18,7 +18,7 @@ public:
     void sort_members();
     void eleminate_members();
     void reproduce();
-    int show_adaptation();
+    double show_adaptation();
     inline int fitness_formula(unsigned char member_color);
 private:
     int size_o_members{0};
