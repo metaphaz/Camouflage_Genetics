@@ -1,0 +1,3 @@
+/home/metaphaz/camo_genetics/cmake-build-debug/CMakeFiles/camo_genetics.dir
+/home/metaphaz/camo_genetics/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/metaphaz/camo_genetics/cmake-build-debug/CMakeFiles/rebuild_cache.dir
